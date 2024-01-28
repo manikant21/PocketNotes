@@ -1,0 +1,56 @@
+ .left-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+    position: relative;
+    overflow-y: 'scroll';
+    
+ }
+ .cont{
+   position:sticky;
+   width:100%;
+   height:15%;
+   display:grid;
+   place-items: center;
+ }
+  .heading{
+  color: #000;
+  font-family: Roboto;
+  font-size: xx-large;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  padding:1rem;
+  }
+ .lower-cont{
+   /* position: sticky; */
+   /* margin-top: 25%; */
+   padding-left: 2rem;
+   overflow: auto;
+   /* text-decoration: none; */
+ }
+
+ .plus-container {
+  position: absolute;
+  background-color: blue;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  bottom: 4%;
+  right: 9%;
+ }
+
+ .plus-icon {
+  font-size: xx-large;
+  color:white;
+ }
+
+
+
+ /* responsive */
+ 

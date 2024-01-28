@@ -1,0 +1,21 @@
+.single-container {
+    width: 70%;
+    position: relative;
+    height: 100vh;
+    background-color: #DAE5F5;
+;
+}
+.headings{
+    font-size: 45px;
+    font-family: Roboto;
+    display: grid;
+    place-items: center;
+    background-color: blue;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 1rem;
+    padding: 1rem;
+}

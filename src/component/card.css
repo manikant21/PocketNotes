@@ -1,0 +1,16 @@
+.card{
+    background-color: #fff;
+    padding:1rem;
+    position: relative;
+}
+.date-time {
+    display: flex;
+    gap:0.5rem;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+}
+.message-container {
+    /* padding: 1rem; */
+    word-wrap: break-word;
+}

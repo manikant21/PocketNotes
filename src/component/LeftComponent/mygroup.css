@@ -1,0 +1,25 @@
+.group-container {
+    display:flex;
+    gap:1rem;
+    align-items: center;
+    text-decoration: none;
+}
+.che{
+    padding:1rem;
+    list-style: none;
+}
+.initials{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: cadetblue;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+.names{
+    /* font-family: Roboto; */
+    color: black;
+    text-decoration-style: none;
+    font-size:x-large;
+}

@@ -1,0 +1,17 @@
+.box{
+    background-color: white;
+    position: absolute;
+    height:20%;
+    width: 100%;
+    bottom: 0rem;
+    padding:0.5rem;
+    border:1rem solid #001F8B;
+}
+.icon{
+    position:absolute;
+    bottom: 3%;
+    right: 3%;
+}
+/* .input-box {
+    padding: 1rem;
+} */
