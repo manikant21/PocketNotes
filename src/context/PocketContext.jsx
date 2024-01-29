@@ -1,21 +1,19 @@
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { useStorage } from "./StorageContext";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const PocketContext = createContext();
 
 const PocketContextProvider = ({ children }) => {
-  const { get, set, remove, values } = useStorage();
   const [Groups, setGroups] = useState([]); //{ id:"1",name:"Java",color:"#00FF00"},{id:"2",name:"Python",color:"#800000"},{id:"3",name:"c++",color:"#00FF00"},{id:"4",name:"JS",color:"#00FF00", }]);
   const [mediaToggle, setMediaToggle] = useState(false);
   useEffect(() => {
-    const groups = JSON.parse(get("groups") || "[]");
+    const groups = JSON.parse(localStorage.getItem("groups") || "[]");
     // console.log(groups);
     setGroups((prev) => [...prev, ...groups]);
   }, []);
 
   useEffect(() => {
-    set("groups", JSON.stringify(Groups));
-  }, [Groups, set]);
+    localStorage.setItem("groups", JSON.stringify(Groups));
+  }, [Groups]);
 
   const [message, setMessage] = useState([
     {
@@ -92,11 +90,11 @@ const PocketContextProvider = ({ children }) => {
   ]);
 
   useEffect(() => {
-    const mess = JSON.parse(get("mess") || "[]");
+    const mess = JSON.parse(localStorage.getItem("mess") || "[]");
     setMessage((prev) => [...prev, ...mess]);
   }, []);
   useEffect(() => {
-    set("mess", JSON.stringify(message));
+    localStorage.setItem("mess", JSON.stringify(message));
   }, [message]);
 
   const [colors, setColors] = useState([

@@ -5,11 +5,9 @@ import LeftComp from "./component/LeftComponent/LeftComp";
 import { PocketContextProvider } from "./context/PocketContext";
 import SingleGroup from "./component/SingleGroup/SingleGroup";
 import GroupPopUp from "./component/LeftComponent/GroupPopUp";
-import { StorageProvider } from "./context/StorageContext";
 
 function App() {
   return (
-    <StorageProvider>
       <PocketContextProvider>
         <div className="main-container">
           <BrowserRouter>
@@ -22,7 +20,6 @@ function App() {
           </BrowserRouter>
         </div>
       </PocketContextProvider>
-    </StorageProvider>
   );
 }
 

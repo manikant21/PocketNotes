@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./single-group.css";
 import { useParams } from "react-router-dom";
 import { usePocket } from "../../context/PocketContext";
@@ -14,7 +14,6 @@ const SingleGroup = () => {
       return curr.id == groupId;
     });
 
-  const colorName = requiredObj.color;
 
   const findInitials = (name) => {
     const splittedArray = name.split(" ");
