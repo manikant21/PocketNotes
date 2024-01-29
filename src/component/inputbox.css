@@ -15,3 +15,9 @@
 /* .input-box {
     padding: 1rem;
 } */
+
+@media screen and (max-width:479px) {
+    .box{
+       width:100%; 
+    }
+}

@@ -8,11 +8,18 @@ import {useState} from "react";
 import GroupPopUp from './GroupPopUp';
 const LeftComp = () => {
 
-  const { Groups} = usePocket();
+  const { Groups, mediaToggle, setMediaToggle } = usePocket();
+
+  console.log(mediaToggle);
+  
   // console.log(Groups);
 
+  // style={mediaToggle ? {display:"none"} : {display:"flex"}}
+
+  // console.log(window.innerWidth);
+
   return (
-    <div className='left-container'>
+    <div style={mediaToggle ? {display:"none"} : {display:"flex"}} className='left-container'>
       <div className='cont'>
         <h2 className='heading'>Pocket Notes</h2>
       </div>

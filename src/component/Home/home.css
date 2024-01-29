@@ -3,4 +3,35 @@
     background-color: #DAE5F5;
     display: grid;
     place-items: center;
+    position:relative;
+}
+.home-img {
+    width:60%;
+}
+/* .head-name {
+    
+} */
+.contents {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+.para-name {
+    padding:1rem;
+    width:60%;
+}
+.last{
+    position: absolute;
+    bottom: 0.5rem;
+    display: flex;
+    gap:0.5rem;
+}
+@media screen and (max-width: 479px) {
+    .home-container{
+        display:none;
+    }
+    
+    
 }

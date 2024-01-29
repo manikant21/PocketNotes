@@ -1,11 +1,13 @@
 .group-container {
     display:flex;
     gap:1rem;
+    width:100%;
     align-items: center;
     text-decoration: none;
 }
 .che{
     padding:1rem;
+    
     list-style: none;
 }
 .initials{
@@ -22,4 +24,16 @@
     color: black;
     text-decoration-style: none;
     font-size:x-large;
+}
+.che:hover{
+    background-color: #2F2F2F2B;
+    cursor: pointer;
+    width:100%;
+    
+
+
+}
+.che:active{
+    background-color: #2F2F2F2B;
+    
 }

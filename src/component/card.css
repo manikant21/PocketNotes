@@ -9,6 +9,7 @@
     position: absolute;
     bottom: 5%;
     right: 3%;
+    font-size: x-small;
 }
 .message-container {
     /* padding: 1rem; */
